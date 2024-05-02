@@ -1,1 +1,1 @@
-export const assistantId = "asst_jbNyHzM6FKKfNAn0DjBlxaGY"; // set your assistant ID here
+export const assistantId = "asst_VE5EYSfWnYUBEi1ka02jl4df"; // set your assistant ID here
