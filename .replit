@@ -12,6 +12,11 @@ channel = "stable-23_05"
 language = "nodejs"
 
 [deployment]
-run = ["sh", "-c", "npm run dev"]
-deploymentTarget = "cloudrun"
+run = ["sh", "-c", "npm install && npx next build && npx next start"]
+deploymentTarget = "gce"
 ignorePorts = false
+build = ["sh", "-c", "npx"]
+
+[[ports]]
+localPort = 3000
+externalPort = 80
